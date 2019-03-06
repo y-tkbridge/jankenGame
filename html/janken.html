@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>じゃんけんゲーム！</title>
+    <style>
+        img {
+            height:200px;
+        }
+
+
+        .selectHands{
+            text-align: center;
+        }
+
+        .imgBox {
+            text-align: center;
+            display: inline-flex;
+            cursor: pointer;
+            opacity: 1;
+            padding:40px;
+
+            /*transition-property: transform, opacity;
+            transition-duration: .4s .4s;
+            */
+           
+            
+
+        }
+
+        .imgBox:hover {
+            transform:scale(1.5);
+            /*background: skyblue;*/
+        }
+
+        .gameStartButton {
+            background-color: #333;
+            color: #fff;
+            height:2.5rem;
+            width:5rem;
+
+        }
+
+        .gameStartButton:hover {
+            background-color: #59b1eb;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>じゃんけんゲーム！</h1>
+    <div class="selectHands">
+        <div class="imgBox">
+                <image src="../images/gu.png"></image>
+        </div>
+
+        <div class="imgBox">
+            <image src="../images/ch.png"></image>
+        </div>
+
+        <div class="imgBox">
+            <image src="../images/pa.png"></image>
+        </div>
+    </div>
+    <form action="" method="post">
+        <input class="gameStartButton" type="submit" value="start">
+        
+    </form>
+</body>
+</html>
